@@ -164,32 +164,42 @@ Hierachy
 ### UI
 ![Unity_UI](https://github.com/nodb/ARRoomSimulator/assets/71473708/25835ce8-4c79-4d36-a939-b7fe7330e26c)
 
-in Unity
+- in Unity
 
 ![Reality_UI](https://github.com/nodb/ARRoomSimulator/assets/71473708/46144444-fac0-4852-bd20-bc07b963099e)
 
-in Reality
+- in Reality
 
 ### Spatial Recognition
 https://github.com/nodb/ARRoomSimulator/assets/71473708/96e7c295-5c9a-4bde-ad15-c9a3993c0137
 
+- Take enough time to let the camera recognize the space.
+- Find a plane based on feature points in the AR Default Plane.
+
 ### Object Placement
 https://github.com/nodb/ARRoomSimulator/assets/71473708/6906acfa-1e82-4eab-a187-4e96210c8ec1
 
-Scroll View
+- Click the button for the desired object and then click in the AR space to place the object.
+- Object buttons can be moved to Scroll View.
 
 ### Object Recognition(Select)
 https://github.com/nodb/ARRoomSimulator/assets/71473708/a1d002fb-b7f3-49c4-8549-651c45ba54fe
 
+- You can select an object by clicking on it.
+- Selected objects can be identified through color.
+- You can move the selected object to another location by dragging it.
+
 ### Object Manipulation
 https://github.com/nodb/ARRoomSimulator/assets/71473708/19db4e8c-b51d-41d3-ac63-f34b74830ff5
 
-Sliders
-- Above: Size
-- Bottom: Rotation
+- You can adjust the size and rotation of the selected object through Sliders.
+  - Above: Size
+  - Bottom: Rotation
 
 ### Object Occlusion
 https://github.com/nodb/ARRoomSimulator/assets/71473708/875d71c9-1b1a-423a-a02d-677d9ff034c1
+
+- The distance to the recognized object is calculated through the main camera's AR Occlusion Environment Depth, so that if the object in the AR space becomes farther away, it will be obscured and will not appear.
 
 ### Demonstration of all features
 [▶️ Full video on YouTube](https://youtu.be/Q6gFhA9DSlE)
