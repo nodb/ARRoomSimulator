@@ -232,7 +232,7 @@ Modified to create an object by recognizing it only once when pressed
   - 유니티 강좌 & 팁, 안드로이드 빌드 세팅 - https://blog.naver.com/whatsuppapa/222300384734
   - Android와 Unity 간 버전 호환성 관리 - https://velog.io/@maratangsoft/Android%EC%99%80-Unity-%EA%B0%84-Gradle-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC
 
-## 🗂️ Asset package used
+## 🗂️ Asset Package Used
 - [Big Furniture Pack](https://assetstore.unity.com/packages/3d/props/furniture/big-furniture-pack-7717)
 - [HDRP Furniture Pack](https://assetstore.unity.com/packages/3d/props/furniture/hdrp-furniture-pack-153946)
 
