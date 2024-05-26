@@ -50,10 +50,9 @@ git clone https://github.com/nodb/ARRoomSimulator.git
 
 This script is responsible for managing multiple AR objects within the AR environment. It allows users to place, select, and manipulate 3D objects using touch input.
 
-#### Object Placement Method
-
-1. Save the prefab of the pressed button each time the button is pressed.
-2. Instantiate with saved Prefab
+> **Object Placement Method**
+> 1. Save the prefab of the pressed button each time the button is pressed.
+> 2. Instantiate with saved Prefab
 
 - **Serialized Fields**:
   - `ARRaycastManager arRaycastManager`: Manages AR raycasting to detect surfaces in the AR environment.
@@ -84,11 +83,10 @@ This script is responsible for managing multiple AR objects within the AR enviro
 
 This script handles the selection state and material management for AR objects. When an object is selected, it changes its material to indicate selection and reverts to the original material when deselected.
 
-#### Object Recognition(Select) Method
-
-1. Shoot a ray at a touch position centered on the camera
-2. Receive the value of the AR object that collided with the ray and set the selected value of the AR object to true.
-3. The setter of the AR object is called and the Meterial color changes.
+> **Object Recognition(Select) Method**
+> 1. Shoot a ray at a touch position centered on the camera
+> 2. Receive the value of the AR object that collided with the ray and set the selected value of the AR object to true.
+> 3. The setter of the AR object is called and the Meterial color changes.
 
 - **Private Fields**:
 
@@ -111,29 +109,27 @@ This script handles the selection state and material management for AR objects. 
 
 Hierachy
 
-```
-- Directional Light
-- AR Session
-- XR Origin
-  - Camera Offset
-    - Main Camera
-- AR Default Plane
-- UI
-  - Canvas
-    - Scroll View
-      - Viewport
-        - Content
-          - ChairBtn1
-          - ChairBtn2
-          - TableBtn1
-          - ...
-    - Sliders
-      - ScaleSlider
-      - Rotation Slider
-  - EventSystem
-  - ARSceneManager
-- ARObjectManager
-```
+> - Directional Light
+> - AR Session
+> - XR Origin
+>   - Camera Offset
+>     - Main Camera
+> - AR Default Plane
+> - UI
+>   - Canvas
+>     - Scroll View
+>       - Viewport
+>         - Content
+>           - ChairBtn1
+>           - ChairBtn2
+>           - TableBtn1
+>           - ...
+>     - Sliders
+>       - ScaleSlider
+>       - Rotation Slider
+>   - EventSystem
+>   - ARSceneManager
+> - ARObjectManager
 
 #### AR Session
 
@@ -168,20 +164,34 @@ Hierachy
 ## 🐞 Error Correction
 
 ### The latest version of the Android API is too high and is not compatible with Unity apps.
-
 "This app isn't compatible with the latest version of Android. Check for an update or contact the apps developer."
-
 - Modify target architecture(https://discussions.unity.com/t/unity-game-not-compatible-with-latest-version-of-android-error/326763)
 
 ### arRaycast operates when touching the UI
-
 Blocks arRaycastManager's raycast from working.
+- AR Foundation, never blocking raycaster on UI(https://forum.unity.com/threads/ar-foundation-never-blocking-raycaster-on-ui.986688/)
 
 ### Press and hold, objects will continue to be created.
-
 Modified to create an object by recognizing it only once when pressed
+- touchCount: Number of fingers in contact with the screen
 
 ## 🔗 Reference
+- Unity Hub
+  - Install Unity Hub - https://docs.unity3d.com/kr/2021.2/Manual/GettingStartedInstallingHub.html
+- Unity GameObject
+  - class-GameObject - https://docs.unity3d.com/kr/2023.2/Manual/class-GameObject.html
+- Unity AR Foundation
+  - AR Foundation - https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@6.0/manual/index.html
+  - Unity AR Foundation AR 개발 초기 설정 & 평면 인식 - https://vrworld.tistory.com/2
+  - 유니티로 AR 앱 만들기 - https://youtu.be/gi9iHTY9z1o?si=01zQGklYNrS8Y87C
+- unity android build
+  - Android SDK Setup - https://docs.unity3d.com/kr/2023.2/Manual/android-sdksetup.html
+  - 유니티 강좌 & 팁, 안드로이드 빌드 세팅 - https://blog.naver.com/whatsuppapa/222300384734
+  - Android와 Unity 간 버전 호환성 관리 - https://velog.io/@maratangsoft/Android%EC%99%80-Unity-%EA%B0%84-Gradle-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC
+
+## 🗂️ Asset package used
+- [Big Furniture Pack](https://assetstore.unity.com/packages/3d/props/furniture/big-furniture-pack-7717)
+- [HDRP Furniture Pack](https://assetstore.unity.com/packages/3d/props/furniture/hdrp-furniture-pack-153946)
 
 ## ‍💻 Developer
 
@@ -190,4 +200,4 @@ Modified to create an object by recognizing it only once when pressed
 ## 💳 License
 
 This project is released under the MIT License.  
-Detailed license information can be found in the [LICENSE]() file.
+Detailed license information can be found in the [LICENSE](https://github.com/nodb/ARRoomSimulator/blob/main/LICENSE.txt) file.
