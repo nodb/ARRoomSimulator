@@ -46,7 +46,7 @@ git clone https://github.com/nodb/ARRoomSimulator.git
 
 ## 📁 Scripts
 
-### 📄 ARMultipleObjectController.cs
+### 📄 [ARMultipleObjectController.cs](https://github.com/nodb/ARRoomSimulator/blob/main/Assets/Scripts/ARMultipleObjectController.cs)
 
 This script is responsible for managing multiple AR objects within the AR environment. It allows users to place, select, and manipulate 3D objects using touch input.
 
@@ -79,7 +79,7 @@ This script is responsible for managing multiple AR objects within the AR enviro
   - `void SelectARPlane(Vector2 touchPosition)`: Places a new AR object if an AR plane is touched.
   - `bool IsPointOverUIObject(Vector2 pos)`: Checks if the touch position is over a UI element to prevent interference.
 
-### 📄 ARObject.cs
+### 📄 [ARObject.cs](https://github.com/nodb/ARRoomSimulator/blob/main/Assets/Scripts/ARObject.cs)
 
 This script handles the selection state and material management for AR objects. When an object is selected, it changes its material to indicate selection and reverts to the original material when deselected.
 
@@ -105,7 +105,7 @@ This script handles the selection state and material management for AR objects. 
 
 ## 📁 Scenes
 
-### 📄 MultipleObjectControl
+### 📄 [MultipleObjectControl](https://github.com/nodb/ARRoomSimulator/blob/main/Assets/Scenes/MultipleObjectControl.unity)
 
 Hierachy
 
@@ -160,6 +160,36 @@ Hierachy
   - minimum : 0, maximum: 360
 
 ## 🪑 Example Scene
+
+### UI
+![Unity_UI](https://github.com/nodb/ARRoomSimulator/assets/71473708/25835ce8-4c79-4d36-a939-b7fe7330e26c)
+in Unity
+![Reality_UI](https://github.com/nodb/ARRoomSimulator/assets/71473708/46144444-fac0-4852-bd20-bc07b963099e)
+in Reality
+
+### Spatial Recognition
+https://github.com/nodb/ARRoomSimulator/assets/71473708/96e7c295-5c9a-4bde-ad15-c9a3993c0137
+
+### Object Placement
+https://github.com/nodb/ARRoomSimulator/assets/71473708/6906acfa-1e82-4eab-a187-4e96210c8ec1
+
+Scroll View
+
+### Object Recognition(Select)
+https://github.com/nodb/ARRoomSimulator/assets/71473708/a1d002fb-b7f3-49c4-8549-651c45ba54fe
+
+### Object Manipulation
+https://github.com/nodb/ARRoomSimulator/assets/71473708/19db4e8c-b51d-41d3-ac63-f34b74830ff5
+
+Sliders
+- Above: Size
+- Bottom: Rotation
+
+### Object Occlusion
+https://github.com/nodb/ARRoomSimulator/assets/71473708/875d71c9-1b1a-423a-a02d-677d9ff034c1
+
+### Demonstration of all features
+[▶️ Full video on YouTube](https://youtu.be/Q6gFhA9DSlE)
 
 ## 🐞 Error Correction
 
