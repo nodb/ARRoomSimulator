@@ -225,6 +225,9 @@ Modified to create an object by recognizing it only once when pressed
   - class-GameObject - https://docs.unity3d.com/kr/2023.2/Manual/class-GameObject.html
 - Unity AR Foundation
   - AR Foundation - https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@6.0/manual/index.html
+  - Plane detection - https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@6.0/manual/features/plane-detection/plane-detection.html
+  - AR Foundation(AR core) - https://developers.google.com/ar/develop/unity-arf/getting-started-ar-foundation?hl=ko
+  - Create an AR game using Unity's AR Foundation - https://codelabs.developers.google.com/arcore-unity-ar-foundation#0
   - Unity AR Foundation AR 개발 초기 설정 & 평면 인식 - https://vrworld.tistory.com/2
   - 유니티로 AR 앱 만들기 - https://youtu.be/gi9iHTY9z1o?si=01zQGklYNrS8Y87C
 - unity android build
@@ -235,6 +238,9 @@ Modified to create an object by recognizing it only once when pressed
 ## 🗂️ Asset Package Used
 - [Big Furniture Pack](https://assetstore.unity.com/packages/3d/props/furniture/big-furniture-pack-7717)
 - [HDRP Furniture Pack](https://assetstore.unity.com/packages/3d/props/furniture/hdrp-furniture-pack-153946)
+
+## 📲 Install the application
+[ARRoomSimulator_v1.0.0](https://github.com/nodb/ARRoomSimulator/releases/tag/v1.0.0) (Android)
 
 ## ‍💻 Developer
 
