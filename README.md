@@ -201,8 +201,10 @@ https://github.com/nodb/ARRoomSimulator/assets/71473708/875d71c9-1b1a-423a-a02d-
 
 - The distance to the recognized object is calculated through the main camera's AR Occlusion Environment Depth, so that if the object in the AR space becomes farther away, it will be obscured and will not appear.
 
-### Demonstration of all features
+## ▶️ Demonstration of all features
 [▶️ Full video on YouTube](https://youtu.be/Q6gFhA9DSlE)
+
+https://github.com/nodb/ARRoomSimulator/assets/71473708/2db21204-d7d8-4c0e-abfd-f6011231fbe2
 
 ## 🐞 Error Correction
 
